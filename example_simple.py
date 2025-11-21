@@ -24,8 +24,11 @@ def demo_screen_capture():
     print(f"Captured: {img.size[0]}x{img.size[1]} pixels")
     
     # Save it
-    img.save("/tmp/test_screenshot.png")
-    print("Saved to: /tmp/test_screenshot.png")
+    import tempfile
+    import os
+    screenshot_path = os.path.join(tempfile.gettempdir(), "test_screenshot.png")
+    img.save(screenshot_path)
+    print(f"Saved to: {screenshot_path}")
     print()
 
 

@@ -3,9 +3,5 @@ google-genai>=0.2.0
 pillow>=10.0.0
 numpy>=1.24.0
 mss>=9.0.1
-opencv-python>=4.8.0
 pyautogui>=0.9.54
 python-dotenv>=1.0.0
-
-# Optional for better performance
-pynput>=1.7.6
